@@ -1,10 +1,14 @@
-import {View, Text} from 'react-native';
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import 'react-native-gesture-handler';
+import AuthStack from './src/Navigation/AuthStack/AuthStack';
 
-export default function App() {
+function App() {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <NavigationContainer>
+      <AuthStack />
+    </NavigationContainer>
   );
 }
+
+export default App;
